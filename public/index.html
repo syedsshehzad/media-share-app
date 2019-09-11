@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="bundle.js"></script>
+</head>
+
+<body style="background: #f7e2ce">
+    
+    <div id="banner"></div>
+
+    <div style="padding: 10px; margin: 15px; border:#bd562e 2px solid; background:#ffbca1">
+        <label for="newPic">Select</label>
+        <input type="file" name="newPic" />
+        <label for="title">Name your file</label>
+        <input type="text" name="title" />
+        <button id="submit">Submit</button>
+    </div>
+
+    <button onclick="getData()">Get Unapproved Pictures</button>
+    <button onclick="getApproved()">Get Approved Pictures</button>
+
+    <div id="react" style="padding: 10px; margin: 15px; border:#62094f 2px solid; background:#ffa2eb"></div>
+
+    <h1>Photo Album Viewer</h1>
+    <button onclick="listAlbums()">List Albums</button>
+    <div id="viewer"></div>
+
+    <div id="content">
+        <button onclick="getMedia()">Get Contents</button>
+        <h2><u>Contents:</u></h2>
+    </div>
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <!--script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script-->
+    <script src="images_render.js"></script>
+
+</body>
+
+</html>
